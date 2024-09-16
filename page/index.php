@@ -9,7 +9,7 @@
         <meta name="description" content="admin">
         <meta name="keywords" content="dashboard template">
         <meta name="author" content="LEFT4CODE">
-        <title>Dashboard Admin</title>
+        <title>Admin</title>
         <!-- BEGIN: CSS Assets-->
         <?php include '../include/HeaderLink.php'; ?>
         
