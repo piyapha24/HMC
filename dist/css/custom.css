@@ -9,11 +9,13 @@
   position: relative;
 }
 
-.border-5center h3:before {
+.border-5center:before {
+  content: "";
   position: absolute;
-  top: -10px;
-  width: 1px;
-  height: 2px;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
   background-color: white;
 }
 
@@ -49,4 +51,10 @@
 
 .user_icon.customer {
   background-color: #007BFF;
+}
+
+.login-width {
+  width: 29.8507462687%;
+  padding: 0 5px;
+  margin: 0 6px;
 }/*# sourceMappingURL=custom.css.map */
