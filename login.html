@@ -10,6 +10,7 @@
             <title>Scrap Selling Application</title>
             <!-- BEGIN: CSS Assets-->
             <link rel="stylesheet" href="dist/css/app.css" />
+            <link rel="stylesheet" href="dist/css/custom.css" />
             <!-- END: CSS Assets-->
         </head>
         <!-- END: Head -->
@@ -36,13 +37,16 @@
                         <div class="intro-x flex text-slate-600 dark:text-slate-500 text-xs sm:text-sm mt-4">
                             <div class="flex items-center mr-auto">
                                 <input id="remember-me" type="checkbox" class="form-check-input border mr-2">
-                                <label class="cursor-pointer select-none" for="remember-me">Remember me</label>
+                                <label class="cursor-pointer select-none text-white" for="remember-me">Remember me</label>
                             </div>
                         </div>
+                        <div class="intro-x mt-8 my-auto intro-x xl:mt-24 text-slate-600 text-center border-5center">
+                            <h3 class="border-center"><span class="text-primary text-slate-200">Sign In For</span></h3>
+                        </div>
                         <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
-                            <button class="btn btn-primary py-3 px-4 w-full xl:w-32 xl:mr-3 align-top">Temp</button>
-                            <button class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top">HMC</button>
-                            <button class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top">Customer</button>
+                            <button class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top user_icon temp" onclick="location.href='home.html';"><i data-lucide="contact"></i><span>Temp</span></button>
+                            <button class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top user_icon hmc" onclick="location.href='home.html';"><i data-lucide="user"></i><span>HMC</span></button>
+                            <button class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top user_icon customer" onclick="location.href='home.html';"><i data-lucide="dollar-sign"></i><span>Customer</span></button>
                         </div>
                     </div>
                 </div>

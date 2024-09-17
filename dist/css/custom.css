@@ -1,0 +1,52 @@
+/*
+ |--------------------------------------------------------------------------
+ | Custom
+ |--------------------------------------------------------------------------
+ */
+.border-5center {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.border-5center h3:before {
+  position: absolute;
+  top: -10px;
+  width: 1px;
+  height: 2px;
+  background-color: white;
+}
+
+.border-center {
+  display: inline;
+  position: relative;
+}
+.border-center span {
+  color: rgb(14, 64, 106);
+  font-weight: 700;
+  background-color: white;
+  padding: 3px;
+}
+
+.user_icon {
+  color: white;
+  font-size: 20px;
+  font-family: "Calibri", Tahoma, serif;
+  font-weight: 700;
+  height: 45px;
+}
+.user_icon span {
+  padding: 10px;
+}
+
+.user_icon.temp {
+  background-color: #7B84A1;
+}
+
+.user_icon.hmc {
+  background-color: #00ADEF;
+}
+
+.user_icon.customer {
+  background-color: #007BFF;
+}/*# sourceMappingURL=custom.css.map */

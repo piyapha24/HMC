@@ -1,0 +1,68 @@
+/*
+ |--------------------------------------------------------------------------
+ | Custom
+ |--------------------------------------------------------------------------
+ */
+
+ $base-color-primary: 14 64 106;
+ $base-color-secondary: 123 132 161;
+ $base-color-success: 125 189 66;
+ $base-color-info: 0 173 239;
+ $base-color-warning: 255 205 6;
+ $base-color-pending: 245 131 33;
+ $base-color-danger: 255 0 0;
+ $base-color-light: 255 255 255;
+ $base-color-dark: 0 0 0;
+ $base-color-hmc: 184 229 250;
+
+
+.border-5center {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.border-5center h3:before {
+    position: absolute;
+    top: -10px;
+    width: 1px;
+    height: 2px;
+    background-color: white;
+}
+
+ .border-center {
+    display: inline;
+    position: relative;
+    span { 
+        color: rgb($base-color-primary);
+        font-weight: 700;
+        background-color: white;
+        padding: 3px;
+          }
+ }
+
+
+.user_icon {
+    span {
+        padding: 10px;
+    }
+    color: white;
+    font-size: 20px;
+    font-family: 'Calibri',Tahoma, serif;
+    font-weight: 700;
+    height: 45px;
+}
+
+.user_icon.temp {
+        background-color: #7B84A1;
+}
+
+.user_icon.hmc {
+    background-color: #00ADEF;
+}
+
+.user_icon.customer {
+    background-color: #007BFF;
+}
+
+
