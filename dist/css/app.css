@@ -9664,11 +9664,15 @@ html body {
   position: relative;
   overflow: hidden;
   --tw-bg-opacity: 1;
-  background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+  /* background-color: rgb(var(--color-primary) / var(--tw-bg-opacity)); */
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  background: url('../images/bg-photo-login.png');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .dark .login {
   --tw-bg-opacity: 1;
