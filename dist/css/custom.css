@@ -79,4 +79,23 @@ margin: 0px 50px;
   width: 64px!important;
   height: 64px!important;
 }
+.inProgressBox {
+  background-color: #ff9800;
+  padding: 3px 10px;
+  border-radius: 50px;
+  color: white;
+}
+
+.CompleteBox {
+  background-color: #00BA34;
+  padding: 3px 10px;
+  border-radius: 50px;
+  color: white;
+}
+.CancelBox {
+  background-color: #FF0000;
+  padding: 3px 10px;
+  border-radius: 50px;
+  color: white;
+}
 
