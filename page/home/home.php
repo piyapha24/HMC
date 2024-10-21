@@ -48,7 +48,7 @@
                                 <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y home-box">
                                     <div class="report-box zoom-in color-hmc">
                                         <div class="box p-5 box-hmc">
-                                            <a href="index.php">
+                                            <a href="../../page/SellingRequest/worklist.php">
                                                 <div class="flex justify-center">
                                                     <i data-lucide="package" class="report-box__icon text-white icon-home"></i>
                                                 </div>
@@ -60,7 +60,7 @@
                                 <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y home-box">
                                     <div class="report-box zoom-in color-hmc">
                                         <div class="box p-5 box-hmc">
-                                            <a href="index.php">
+                                            <a href="../../page/Customer/worklist.php">
                                                 <div class="flex justify-center">
                                                     <i data-lucide="users" class="report-box__icon text-white icon-home"></i>
                                                 </div>
@@ -73,7 +73,7 @@
                                 <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y home-box">
                                     <div class="report-box zoom-in color-hmc">
                                         <div class="box p-5 box-hmc">
-                                            <a href="index.php">
+                                            <a href="../../page/Account/worklist.php">
                                                 <div class="flex justify-center">
                                                     <i data-lucide="coins" class="report-box__icon text-white icon-home"></i>
                                                 </div>
@@ -86,7 +86,7 @@
                                 <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y home-box">
                                     <div class="report-box zoom-in color-hmc">
                                         <div class="box p-5 box-hmc">
-                                            <a href="index.php">
+                                            <a href="../../page/SecurityGuard/worklist.php">
                                                 <div class="flex justify-center">
                                                     <i data-lucide="shield" class="report-box__icon text-white icon-home"></i>
                                                 </div>
@@ -99,7 +99,7 @@
                                 <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y home-box">
                                     <div class="report-box zoom-in color-hmc">
                                         <div class="box p-5 box-hmc">
-                                            <a href="index.php">
+                                            <a href="../../page/TruckScale/worklist.php">
                                                 <div class="flex justify-center">
                                                     <i data-lucide="truck" class="report-box__icon text-white icon-home"></i>
                                                 </div>
@@ -111,7 +111,7 @@
                                 <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y home-box">
                                     <div class="report-box zoom-in color-hmc">
                                         <div class="box p-5 box-hmc">
-                                            <a href="index.php">
+                                            <a href="../../page/Environment/WorkList.php">
                                                 <div class="flex justify-center">
                                                     <i data-lucide="sprout" class="report-box__icon text-white icon-home"></i>
                                                 </div>
@@ -123,7 +123,7 @@
                                 <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y home-box">
                                     <div class="report-box zoom-in color-hmc">
                                         <div class="box p-5 box-hmc">
-                                            <a href="index.php">
+                                            <a href="../../page/MasterData/ScrapList.php">
                                                 <div class="flex justify-center">
                                                     <i data-lucide="server" class="report-box__icon text-white icon-home"></i>
                                                 </div>
@@ -136,7 +136,7 @@
                                 <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y home-box">
                                     <div class="report-box zoom-in color-hmc">
                                         <div class="box p-5 box-hmc">
-                                            <a href="index.php">
+                                            <a href="../../page/ReportReprint/Report.php">
                                                 <div class="flex justify-center">
                                                     <i data-lucide="printer" class="report-box__icon text-white icon-home"></i>
                                                 </div>
