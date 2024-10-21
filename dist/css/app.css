@@ -2516,9 +2516,9 @@ select {
   color: rgb(var(--color-slate-300) / var(--tw-text-opacity));
 }
 .progress {
-  height: 0.5rem;
+  height: 1.2rem;
   width: 100%;
-  border-radius: 0.25rem;
+  border-radius: 1.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(var(--color-slate-200) / var(--tw-bg-opacity));
 }
@@ -2530,7 +2530,7 @@ select {
   height: 100%;
   align-items: center;
   justify-content: center;
-  border-radius: 0.25rem;
+  border-radius: 1.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
   font-size: 0.75rem;
@@ -7758,11 +7758,15 @@ select {
 }
 .table th {
   border-bottom-width: 2px;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
   font-weight: 500;
+  max-width: 120px;
+  white-space: normal;
+  text-wrap: balance;
+  vertical-align: text-top;
 }
 .dark .table th {
   --tw-border-opacity: 1;
@@ -7770,10 +7774,15 @@ select {
 }
 .table td {
   border-bottom-width: 1px;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .2rem;
+  padding-bottom: .5rem;
+  font-weight: 500;
+  max-width: 120px;
+  white-space: normal;
+  text-wrap: balance;
+  vertical-align: text-top;
 }
 .dark .table td {
   --tw-border-opacity: 1;
@@ -9777,11 +9786,11 @@ html body {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-.table-report:not(.table-report--bordered):not(.table-report--tabulator) td.table-report__action::before {
+/* .table-report:not(.table-report--bordered):not(.table-report--tabulator) td.table-report__action::before {
   position: absolute;
   top: 0px;
   bottom: 0px;
-  left: 0px;
+  left: -15px;
   margin-top: auto;
   margin-bottom: auto;
   display: block;
@@ -9790,7 +9799,7 @@ html body {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(var(--color-slate-200) / var(--tw-bg-opacity));
-}
+} */
 .dark .table-report:not(.table-report--bordered):not(.table-report--tabulator) td.table-report__action::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
