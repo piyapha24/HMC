@@ -13,7 +13,7 @@
     <title>Selling Application</title>
     <!-- BEGIN: CSS Assets-->
     <?php
-     include(__DIR__ . '/../../include/HeaderLink.php'); 
+    include(__DIR__ . '/../../include/HeaderLink.php');
     ?>
     <!-- END: CSS Assets-->
 </head>
@@ -64,25 +64,21 @@
                             <button class="dropdown-toggle dropdown-toggle btn px-2 box w-full font-normal mr-5" aria-expanded="false" data-tw-toggle="dropdown"> Status All <i data-lucide="chevron-down" class="w-4 h-4 ml-2"></i> </button>
                             <div class="dropdown-menu w-40">
                                 <ul class="dropdown-content overflow-y-auto h-32">
-                                    <li> <a href="" class="dropdown-item">In Progress</a> </li>
-                                    <li> <a href="" class="dropdown-item">Complete</a> </li>
-                                    <li> <a href="" class="dropdown-item">Cancel</a> </li>
+                                    <li> <a href="" class="dropdown-item">ปริมาณขนย้าย 0-79%</a> </li>
+                                    <li> <a href="" class="dropdown-item">ปริมาณขนย้าย 80%-89%</a> </li>
+                                    <li> <a href="" class="dropdown-item">ปริมาณขนย้าย 90%-100%</a> </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="dropdown mt-3 sm:mt-0 mr-auto sm:mr-0 mr-5">
-                            <button class="dropdown-toggle dropdown-toggle btn px-2 box w-full font-normal mr-5 ml-5" aria-expanded="false" data-tw-toggle="dropdown"> Type All <i data-lucide="chevron-down" class="w-4 h-4 ml-2"></i> </button>
-                            <div class="dropdown-menu w-40">
-                                <ul class="dropdown-content overflow-y-auto h-32">
-                                    <li> <a href="" class="dropdown-item">Work list SCR</a> </li>
-                                    <li> <a href="" class="dropdown-item">Work list ADR</a> </li>
-                                    <li> <a href="" class="dropdown-item">Work list GRD</a> </li>
-                                </ul>
-                            </div>
-                        </div>
+
                         <div class="sm:ml-auto mt-3 sm:mt-0 relative text-slate-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="calendar" data-lucide="calendar" class="lucide lucide-calendar w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> 
-                                    <input type="text" class="datepicker form-control sm:w-56 box pl-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="calendar" data-lucide="calendar" class="lucide lucide-calendar w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <input type="text" class="datepicker form-control sm:w-56 box pl-10">
                         </div>
 
 
@@ -94,13 +90,19 @@
                             <div class="dropdown-menu w-40">
                                 <ul class="dropdown-content">
                                     <li>
-                                        <a href="" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Create New SCR </a>
+                                        <a href="../../page/MasterData/CreateMsScrap.php" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Scrap List </a>
                                     </li>
                                     <li>
-                                        <a href="" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Create New ADR </a>
+                                        <a href="../../page/MasterData/CreateCustomer.php" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Customer</a>
                                     </li>
                                     <li>
-                                        <a href="" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Create New GRD </a>
+                                        <a href="../../page/MasterData/CreateUser.php" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> User </a>
+                                    </li>
+                                    <li>
+                                        <a href="../../page/MasterData/CreatePickUpPoint.php" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Pick-up Point</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../page/MasterData/CreateNoti.php" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Notification </a>
                                     </li>
                                 </ul>
                             </div>
@@ -109,127 +111,170 @@
                     <!-- BEGIN: Data List -->
                     <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
                         <table class="table table-report -mt-2">
-                            
+
                             <thead>
                                 <tr>
+                                    <th class="whitespace-nowrap">Scrap no.</th>
                                     <th class="whitespace-nowrap">Plant</th>
-                                    <th class="whitespace-nowrap">Doc no.</th>
+                                    <th class="whitespace-nowrap">สถานะคงเหลือ</th>
+                                    <th class="text-center whitespace-nowrap">ระยะเวลาสิ้นสุดสัญญา</th>
+                                    <th class="text-center whitespace-nowrap">ระยะเวลาสิ้นสุดกรมโรงงาน</th>
+                                    <th class="text-center whitespace-nowrap">ปริมาณการขนย้าย</th>
+                                    <th class="text-center whitespace-nowrap">ชื่อกรมโรงาน</th>
                                     <th class="text-center whitespace-nowrap">Selling Item</th>
-                                    <th class="text-center whitespace-nowrap">Location</th>
                                     <th class="text-center whitespace-nowrap">Customer</th>
-                                    <th class="text-center whitespace-nowrap">Requester</th>
-                                    <th class="text-center whitespace-nowrap">Confirm Date</th>
-                                    <th class="text-center whitespace-nowrap">Next Step</th>
+                                    <th class="text-center whitespace-nowrap">Price</th>
+                                    <th class="text-center whitespace-nowrap">Unit</th>
+                                    <th class="text-center whitespace-nowrap">Type</th>
                                     <th class="text-center whitespace-nowrap">Status</th>
+                                    <th class="text-center whitespace-nowrap">Edit</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="intro-x">
-                                    
+                                    <td class="text-left">HMC-001</td>
                                     <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0457-SCR</td>
                                     <td>
-                                        <a href="" class="font-medium whitespace-nowrap">Steel scrap</a>                                        
+                                        <a href="" class="font-medium whitespace-nowrap text-success">500 KG</a>
                                     </td>
-                                    <td class="text-center">PP Plant</td>                                    
-                                    <td class="text-left">วงศ์พานิช</td>
-                                    <td class="text-center">Operation</td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-success">01-10-2025</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-success">01-10-2025</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-success">1000 KG</a>
+                                    </td>
+                                    <td class="text-center">เศษโลหะสแตนเลท</td>
+                                    <td class="text-left">Stainless scrap</td>
+                                    <td class="text-center">3K</td>
+                                    <td class="text-center">15.00</td>
+                                    <td class="text-center">KG</td>
+                                    <td class="text-center">SCR</td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
+                                        <div class="progress mt-3">
+                                            <div class="progress-bar w-2/3 bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
                                     </td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center"> In </div>
-                                    </td>
-                                    <td class="table-report__action w-56">
-                                        <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full  text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
+                                        <div class="flex flex-wrap">
+                                            <button class="btn btn-border-none mr-2" aria-expanded="false">
+                                                <div class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="pencil"></i> </div>
+                                            </button>
+                                            <div class="flex items-center justify-center"> <i data-lucide="chevron-right" class="w-4 h-4 mr-1"></i> </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- END: table row -->
                                 <tr class="intro-x">
-                                    
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0457-SCR</td>
+                                    <td class="text-left">HMC-002</td>
+                                    <td class="text-left">PDH</td>
                                     <td>
-                                        <a href="" class="font-medium whitespace-nowrap">Steel scrap</a>                                        
+                                        <a href="" class="font-medium whitespace-nowrap text-success">250 KG</a>
                                     </td>
-                                    <td class="text-center">PP Plant</td>                                    
-                                    <td class="text-left">วงศ์พานิช</td>
-                                    <td class="text-center">Operation</td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-danger">01-10-2025</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-success">2025-05-01</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-success">550 KG</a>
+                                    </td>
+                                    <td class="text-center">เศษโลหะเหล็ก</td>
+                                    <td class="text-left">Steel scrap</td>
+                                    <td class="text-center">วงศ์พานิช</td>
+                                    <td class="text-center">15.00</td>
+                                    <td class="text-center">KG</td>
+                                    <td class="text-center">SCR</td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center text-danger"> <i data-lucide="square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
+                                        <div class="progress mt-3">
+                                            <div class="progress-bar w-2/3 bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
                                     </td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center"> In </div>
-                                    </td>
-                                    <td class="table-report__action w-56">
-                                        <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full  text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
+                                        <div class="flex flex-wrap">
+                                            <button class="btn btn-border-none mr-2" aria-expanded="false">
+                                                <div class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="pencil"></i> </div>
+                                            </button>
+                                            <div class="flex items-center justify-center"> <i data-lucide="chevron-right" class="w-4 h-4 mr-1"></i> </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- END: table row -->
                                 <tr class="intro-x">
-                                    
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0455-GRD</td>
+                                    <td class="text-left">HMC-003</td>
+                                    <td class="text-left">PDH</td>
                                     <td>
-                                        <a href="" class="font-medium whitespace-nowrap">Grade 7</a>                                        
+                                        <a href="" class="font-medium whitespace-nowrap text-success">250 KG</a>
                                     </td>
-                                    <td class="text-center">Sub Warehouse</td>                                    
-                                    <td class="text-left">NBJ</td>
-                                    <td class="text-center">Operation</td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-danger">01-10-2025</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-success">2025-05-01</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-success">550 KG</a>
+                                    </td>
+                                    <td class="text-center">เศษโลหะเหล็ก</td>
+                                    <td class="text-left">Steel scrap</td>
+                                    <td class="text-center">วงศ์พานิช</td>
+                                    <td class="text-center">15.00</td>
+                                    <td class="text-center">KG</td>
+                                    <td class="text-center">SCR</td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
+                                        <div class="progress mt-3">
+                                            <div class="progress-bar w-4/5 bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                        </div>
                                     </td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center"> None </div>
-                                    </td>
-                                    <td class="table-report__action w-56">
-                                        <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 CompleteBox" href="javascript:;"> Complete </a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full  text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
+                                        <div class="flex flex-wrap">
+                                            <button class="btn btn-border-none mr-2" aria-expanded="false">
+                                                <div class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="pencil"></i> </div>
+                                            </button>
+                                            <div class="flex items-center justify-center"> <i data-lucide="chevron-right" class="w-4 h-4 mr-1"></i> </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- END: table row -->
                                 <tr class="intro-x">
-                                    
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0451-SCR</td>
+                                    <td class="text-left">HMC-004</td>
+                                    <td class="text-left">PDH</td>
                                     <td>
-                                        <a href="" class="font-medium whitespace-nowrap">Wooder pallet</a>                                        
+                                        <a href="" class="font-medium whitespace-nowrap text-success">250 KG</a>
                                     </td>
-                                    <td class="text-center">Sub Warehouse</td>                                    
-                                    <td class="text-left">เพียรทำดี</td>
-                                    <td class="text-center">Kittisak</td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-danger">01-10-2025</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-success">2025-05-01</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap text-success">550 KG</a>
+                                    </td>
+                                    <td class="text-center">เศษโลหะเหล็ก</td>
+                                    <td class="text-left">Steel scrap</td>
+                                    <td class="text-center">วงศ์พานิช</td>
+                                    <td class="text-center">15.00</td>
+                                    <td class="text-center">KG</td>
+                                    <td class="text-center">SCR</td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
+                                        <div class="progress mt-3">
+                                            <div class="progress-bar w-11/12 bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">91.5%</div>
+                                        </div>
                                     </td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center"> None </div>
-                                    </td>
-                                    <td class="table-report__action w-56">
-                                        <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 CancelBox" href="javascript:;"> Cancel </a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full  text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
+                                        <div class="flex flex-wrap">
+                                            <button class="btn btn-border-none mr-2" aria-expanded="false">
+                                                <div class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="pencil"></i> </div>
+                                            </button>
+                                            <div class="flex items-center justify-center"> <i data-lucide="chevron-right" class="w-4 h-4 mr-1"></i> </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- END: table row -->
-                               
-                                
                             </tbody>
                         </table>
                         <!-- END: table box -->

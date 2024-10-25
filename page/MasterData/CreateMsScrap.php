@@ -12,7 +12,9 @@
     <meta name="author" content="orange-thailand">
     <title>Selling Application</title>
     <!-- BEGIN: CSS Assets-->
-    <?php include '../include/HeaderLink.php'; ?>
+    <?php
+    include(__DIR__ . '/../../include/HeaderLink.php');
+    ?>
 
     <!-- END: CSS Assets-->
 </head>
@@ -20,260 +22,178 @@
 
 <body class="py-5">
     <!-- BEGIN: Mobile Menu -->
-    <?php include '../include/side-nav-mobile.php'; ?>
+    <?php include(__DIR__ .  '/../../include/side-nav-mobile.php'); ?>
     <!-- END: Mobile Menu -->
     <div class="flex">
         <!-- BEGIN: Side Menu -->
-        <?php include '../include/side-nav.php'; ?>
+        <?php include(__DIR__ .  '/../../include/side-nav.php'); ?>
         <!-- END: Side Menu -->
         <!-- BEGIN: Content -->
         <div class="content">
-            <!-- BEGIN: Top Bar -->
             <div class="top-bar">
                 <!-- BEGIN: Breadcrumb -->
-                <?php include '../include/breadcrumb.php'; ?>
+                <?php include(__DIR__ . '/../../include/breadcrumb.php'); ?>
                 <!-- END: Breadcrumb -->
                 <!-- BEGIN: Search -->
-                <?php include '../include/thisToday.php'; ?>
+                <?php include(__DIR__ . '/../../include/thisToday.php'); ?>
                 <!-- END: Search -->
                 <!-- BEGIN: Notifications -->
-                <?php include '../include/Notifications.php'; ?>
+                <?php include(__DIR__ . '/../../include/Notifications.php'); ?>
                 <!-- END: Notifications -->
                 <!-- BEGIN: Account Menu -->
-                <?php include '../include/Account.php'; ?>
+                <?php include(__DIR__ . '/../../include/Account.php'); ?>
                 <!-- END: Account Menu -->
             </div>
             <!-- END: Top Bar -->
             <!-- BEGIN: Content -->
             <div class="content">
-
-
-                <div class="grid grid-cols-12 gap-6 mt-5">
-                    <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
-                        <div class="hidden md:block mx-auto text-slate-500">Showing 1 to 10 of 150 entriesv</div>
-                    </div>
-                    <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
-                        <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0  mr-5">
-                            <div class="w-56 relative text-slate-500">
-                                <input type="text" class="form-control w-56 box pr-10" placeholder="Search...">
-                                <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-lucide="search"></i>
-                            </div>
-                        </div>
-                        <div class="dropdown mt-3 sm:mt-0 mr-auto sm:mr-0 mr-5">
-                            <button class="dropdown-toggle dropdown-toggle btn px-2 box w-full font-normal mr-5" aria-expanded="false" data-tw-toggle="dropdown"> Status All <i data-lucide="chevron-down" class="w-4 h-4 ml-2"></i> </button>
-                            <div class="dropdown-menu w-40">
-                                <ul class="dropdown-content overflow-y-auto h-32">
-                                    <li> <a href="" class="dropdown-item">In Progress</a> </li>
-                                    <li> <a href="" class="dropdown-item">Complete</a> </li>
-                                    <li> <a href="" class="dropdown-item">Cancel</a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="sm:ml-auto mt-3 sm:mt-0 relative text-slate-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="calendar" data-lucide="calendar" class="lucide lucide-calendar w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> 
-                                    <input type="text" class="datepicker form-control sm:w-56 box pl-10">
-                        </div>
-
-
-                        <div class="dropdown">
-                            <button class="btn btn-primary shadow-md mr-2 dropdown-toggle btn px-6 pl-6 mx-4" onclick="location.href='choosecolormode.php';">
-                                Create New
-                                <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-lucide="plus"></i> </span>
-                            </button>
-                            
-                        </div>
-                    </div>
-                    <!-- BEGIN: Data List -->
-                    <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
-                        <table class="table table-report -mt-2">
-                            
-                            <thead>
-                                <tr>
-                                    <th class="whitespace-nowrap">Plant</th>
-                                    <th class="whitespace-nowrap">Doc no.</th>
-                                    <th class="text-center whitespace-nowrap">Selling Item</th>
-                                    <th class="text-center whitespace-nowrap">Location</th>
-                                    <th class="text-center whitespace-nowrap">Customer</th>
-                                    <th class="text-center whitespace-nowrap">Requester</th>
-                                    <th class="text-center whitespace-nowrap">Confirm Date</th>
-                                    <th class="text-center whitespace-nowrap">Next Step</th>
-                                    <th class="text-center whitespace-nowrap">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="intro-x">
-                                    
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0457-SCR</td>
-                                    <td>
-                                        <a href="" class="font-medium whitespace-nowrap">Steel scrap</a>                                        
-                                    </td>
-                                    <td class="text-center">PP Plant</td>                                    
-                                    <td class="text-left">วงศ์พานิช</td>
-                                    <td class="text-center">Operation</td>
-                                    <td class="w-40">
-                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
-                                    </td>
-                                    <td class="w-40">
-                                        <div class="flex items-center justify-center"> In </div>
-                                    </td>
-                                    <td class="table-report__action w-56">
-                                        <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full bg-slate-100 text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- END: table row -->
-                                <tr class="intro-x">
-                                    
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0457-SCR</td>
-                                    <td>
-                                        <a href="" class="font-medium whitespace-nowrap">Steel scrap</a>                                        
-                                    </td>
-                                    <td class="text-center">PP Plant</td>                                    
-                                    <td class="text-left">วงศ์พานิช</td>
-                                    <td class="text-center">Operation</td>
-                                    <td class="w-40">
-                                        <div class="flex items-center justify-center text-danger"> <i data-lucide="square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
-                                    </td>
-                                    <td class="w-40">
-                                        <div class="flex items-center justify-center"> In </div>
-                                    </td>
-                                    <td class="table-report__action w-56">
-                                        <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full bg-slate-100 text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- END: table row -->
-                                <tr class="intro-x">
-                                    
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0455-GRD</td>
-                                    <td>
-                                        <a href="" class="font-medium whitespace-nowrap">Grade 7</a>                                        
-                                    </td>
-                                    <td class="text-center">Sub Warehouse</td>                                    
-                                    <td class="text-left">NBJ</td>
-                                    <td class="text-center">Operation</td>
-                                    <td class="w-40">
-                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
-                                    </td>
-                                    <td class="w-40">
-                                        <div class="flex items-center justify-center"> None </div>
-                                    </td>
-                                    <td class="table-report__action w-56">
-                                        <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 CompleteBox" href="javascript:;"> Complete </a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full bg-slate-100 text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- END: table row -->
-                                <tr class="intro-x">
-                                    
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0451-SCR</td>
-                                    <td>
-                                        <a href="" class="font-medium whitespace-nowrap">Wooder pallet</a>                                        
-                                    </td>
-                                    <td class="text-center">Sub Warehouse</td>                                    
-                                    <td class="text-left">เพียรทำดี</td>
-                                    <td class="text-center">Kittisak</td>
-                                    <td class="w-40">
-                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
-                                    </td>
-                                    <td class="w-40">
-                                        <div class="flex items-center justify-center"> None </div>
-                                    </td>
-                                    <td class="table-report__action w-56">
-                                        <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 CancelBox" href="javascript:;"> Cancel </a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full bg-slate-100 text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- END: table row -->
-                               
-                                
-                            </tbody>
-                        </table>
-                        <!-- END: table box -->
-                    </div>
-                    <!-- END: Data List -->
-                    <!-- BEGIN: Pagination -->
-                    <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center">
-                        <nav class="w-full sm:w-auto sm:mr-auto">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevrons-left"></i> </a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevron-left"></i> </a>
-                                </li>
-                                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
-                                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
-                                <li class="page-item active"> <a class="page-link" href="#">2</a> </li>
-                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
-                                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevron-right"></i> </a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevrons-right"></i> </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <select class="w-20 form-select box mt-3 sm:mt-0">
-                            <option>10</option>
-                            <option>25</option>
-                            <option>35</option>
-                            <option>50</option>
-                        </select>
-                    </div>
-                    <!-- END: Pagination -->
+                <div class="intro-y flex items-center mt-8">
+                    <h2 class="text-lg font-medium mr-auto font-bold">
+                        Selling Item Master Data Information
+                    </h2>
                 </div>
-                <!-- BEGIN: Delete Confirmation Modal -->
-                <div id="delete-confirmation-modal" class="modal" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body p-0">
-                                <div class="p-5 text-center">
-                                    <i data-lucide="x-circle" class="w-16 h-16 text-danger mx-auto mt-3"></i>
-                                    <div class="text-3xl mt-5">Are you sure?</div>
-                                    <div class="text-slate-500 mt-2">
-                                        Do you really want to delete these records?
-                                        <br>
-                                        This process cannot be undone.
+                <!-- BEGIN: Info -->
+                <div class="intro-y box px-5 pt-5 mt-5">
+                    <!-- BEGIN: Info ROW-->
+                    <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
+                        <div class="flex flex-1 px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3">
+                                <label for="input-state-1" class="form-label">Scrap no.<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label>
+                                <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BEGIN: Info ROW-->
+                    <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
+                        <div class="grow w-full px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3">
+                                <label for="input-state-1" class="form-label">Selling Item<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label>
+                                <input id="input-state-1" type="text" class="form-control input-state-1" placeholder="Input text">
+                            </div>
+                        </div>
+                        <div class="flex flex-auto w-64 md:w-full px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">Unit Price<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span> : THB</label> <input id="input-state-1" type="text" class="form-control input-state-1" placeholder="Input text">
+                            </div>
+                        </div>
+                        <div class="flex flex-auto w-64 md:w-full px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">Unit<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label> <input id="input-state-1" type="text" class="form-control input-state-1" placeholder="Input text">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- BEGIN: Info ROW-->
+                    <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
+                        <div class="grow w-full px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">Plant<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label>
+                                <select class="form-select sm:mr-2 input-state-1" aria-label="กรุณาเลือก">
+                                    <option>PP Plant</option>
+                                    <option>PDH Plant</option>
+                                    <option>Sub Warehouse</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grow w-full px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3"> 
+                                <label for="input-state-1" class="form-label">ชื่อกรมโรงาน</label> 
+                                <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- BEGIN: Info ROW-->
+                    <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
+                        <div class="flex flex-auto w-48 md:w-full px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">Customer Code</label> <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Customer" disabled>
+                            </div>
+                        </div>
+                        <div class="mt-6 lg:mt-0 flex-1 px-5 border-t lg:border-0 border-slate-200/60 dark:border-darkmode-400 pt-5 lg:pt-0">
+
+                            <div class="flex items-center justify-start lg:justify-start ">
+                                <div class="mt-3 grow w-full ">
+                                    <label for="input-state-1" class="form-label">Customer<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label>
+                                    <div class="input-group search">
+                                        <input id="input-state-1 " type="text" class="search__input form-control input-state-1 input-group-text" placeholder="กรุณาค้นหา...">
+                                        <i data-lucide="search" class="search__icon input-group-text"></i>
                                     </div>
                                 </div>
-                                <div class="px-5 pb-8 text-center">
-                                    <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-24 mr-1">Cancel</button>
-                                    <button type="button" class="btn btn-danger w-24">Delete</button>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-auto w-64 md:w-full px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">Contact Person</label> <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
+                            </div>
+                        </div>
+                        <div class="flex flex-auto w-48 md:w-full px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">Phone no.</label> <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- BEGIN: Info ROW-->
+                    <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
+                        <div class=" flex flex-auto w-1/2 md:w-full px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3">
+                                <label for="input-state-1" class="form-label">เลขทะเบียนโรงงาน</label>
+                                <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input text" disabled>
+                            </div>
+                        </div>
+                        <div class="grow w-full px-5 items-center justify-start lg:justify-start">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">Address</label> <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
                             </div>
                         </div>
                     </div>
+                    <!-- BEGIN: Info ROW-->
+                    <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
+                        <div class="mt-6 lg:mt-0 flex-1 px-5   border-slate-200/60 dark:border-darkmode-400 border-t lg:border-t-0 pt-5 lg:pt-0">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">ระยะเวลาเริ่มต้นสัญญา<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label> <input id="input-state-1" type="text" class="form-control input-state-1 datepicker" placeholder="Input text" data-single-mode="true">
+                            </div>
+                        </div>
+                        <div class="mt-6 lg:mt-0 flex-1 px-5   border-slate-200/60 dark:border-darkmode-400 border-t lg:border-t-0 pt-5 lg:pt-0">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">ระยะเวลาเริ่มต้นกรมโรงงาน</label> <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BEGIN: Info ROW-->
+                    <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
+                        <div class="mt-6 lg:mt-0 flex-1 px-5   border-slate-200/60 dark:border-darkmode-400 border-t lg:border-t-0 pt-5 lg:pt-0">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">ระยะเวลาสิ้นสุดสัญญา<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label> <input id="input-state-1" type="text" class="form-control input-state-1 datepicker " placeholder="Input text" data-single-mode="true">
+                            </div>
+                        </div>
+                        <div class="mt-6 lg:mt-0 flex-1 px-5   border-slate-200/60 dark:border-darkmode-400 border-t lg:border-t-0 pt-5 lg:pt-0">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">ระยะเวลาสิ้นสุดกรมโรงงาน</label> <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BEGIN: Info ROW-->
+                    <div class="border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
+                        <div class="mt-6 lg:mt-0 px-5 border-slate-200/60 dark:border-darkmode-400 border-t lg:border-t-0 pt-5 lg:pt-0">
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">ปริมาณที่ได้รับอนุญาต / KG</label> <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
+                            </div>
+                        </div>
+                        <div class="mt-6 lg:mt-0 px-5 border-slate-200/60 dark:border-darkmode-400 border-t lg:border-t-0 pt-5 lg:pt-0">
+                            <div class=" progress mt-3">
+                                <div class="progress-bar w-2/3 bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BEGIN: buttom-->
+                    <div class="flex flex-col lg:flex-row items-center justify-center p-5 -mx-5">
+                        <button class="btn btn-primary shadow-md mr-2 w-64 px-6 pl-6 mx-4" aria-expanded="false">
+                            Submit
+                        </button>
+                        <button class="btn btn-secondary shadow-md mr-2 w-64 px-6 pl-6 mx-4" aria-expanded="false">
+                            Exit
+                        </button>
+
+                    </div>
                 </div>
-                <!-- END: Delete Confirmation Modal -->
+                <!-- END: Info -->
             </div>
             <!-- END: Content -->
         </div>
         <!-- END: Content -->
     </div>
 
-    <?php include '../include/script.php'; ?>
+    <?php include(__DIR__ . '/../../include/script.php'); ?>
 </body>
 
 </html>

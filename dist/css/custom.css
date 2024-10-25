@@ -99,8 +99,38 @@
     color: white;
   }
 
-  /* .side-nav > ul ul li a:active {
-    color: #ffffff;
-    background: #095581;
+  .input-state-1 {
+    background-color: #FFF1C2;
+  }
+
+  .state--b-blue {
+    border-color: #0E406A!important;
+    border-width: 0.15rem;
+  }
+
+  .input-group > .input-group-text:first-child, .input-group > .form-control:first-child.input-state-1 {
     
-} */
+    border-radius: 0.25rem!important;
+  }
+
+  .search .search__input.input-state-1 {
+    width: 100%;
+    background-color: #FFF1C2;
+  }
+
+  .search .search__icon.input-group-text {
+    z-index: 9999;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .btn-border-none {
+    border: none!important;
+    box-shadow: none!important;
+  }
+
+  .bg-red-200 {
+    background-color: rgb(254 202 202);
+  }	
