@@ -131,6 +131,54 @@
     box-shadow: none!important;
   }
 
+  .bg-red-50	{
+    background-color: rgb(254 242 242);
+  }
+
   .bg-red-200 {
     background-color: rgb(254 202 202);
   }	
+
+  .text-red-500	{
+    color: rgb(239 68 68);
+  }
+
+  .bg-blue-500	{
+    background-color: #0E406A;
+  }
+
+.table-more {
+  box-shadow: none
+}
+
+.table-more td,
+.table-more.table-report:not(.table-report--bordered):not(.table-report--tabulator) th {
+  box-shadow: none!important;
+  white-space: normal;
+  text-wrap: balance;
+  vertical-align: text-top;
+  padding: 1rem!important;
+}
+
+.table-more.table-report:not(.table-report--bordered):not(.table-report--tabulator) {
+  border-spacing: 0!important;
+}
+
+.table-customer.table th,
+.table-customer.table td {
+  max-width: 100px!important;
+  white-space: normal;
+  text-wrap: balance;
+}
+
+.t-status-1 {
+  display: block;
+}
+
+.t-status-2 {
+  display: none!important;
+}
+
+.w-200 {
+  width: 200px!important;
+}

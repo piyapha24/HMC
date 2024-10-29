@@ -107,7 +107,6 @@
                             </div>
                         </div>
                         <div class="mt-6 lg:mt-0 flex-1 px-5 border-t lg:border-0 border-slate-200/60 dark:border-darkmode-400 pt-5 lg:pt-0">
-
                             <div class="flex items-center justify-start lg:justify-start ">
                                 <div class="mt-3 grow w-full ">
                                     <label for="input-state-1" class="form-label">Customer<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label>

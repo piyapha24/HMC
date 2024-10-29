@@ -56,7 +56,7 @@
                 <div class="intro-y box px-5 pt-5 mt-5">
                     <!-- BEGIN: Info ROW-->
                     <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
-                        <div class="flex-auto w-full px-5 items-center justify-start lg:justify-start">
+                        <div class="flex-auto flex-1 px-5 items-center justify-start lg:justify-start">
                             <div class="mt-3">
                                 <label for="input-state-1" class="form-label">Role name<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label>
                                 <select class="form-select sm:mr-2 input-state-1" aria-label="กรุณาเลือก">
@@ -67,9 +67,9 @@
                             </div>
                         </div>
                         <div class="mt-6 lg:mt-0 border-t lg:border-0 border-slate-200/60 dark:border-darkmode-400 pt-5 lg:pt-0">
-                            <div class="flex-auto w-full px-5 items-center justify-start lg:justify-start ">
+                            <div class="flex-auto flex-1 px-5 items-center justify-start lg:justify-start ">
                                 <div class="mt-3 ">
-                                    <label for="input-state-1" class="form-label">Find Employee name</label>
+                                    <label for="input-state-1" class="form-label">Find Employee name<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label>
                                     <div class="input-group search">
                                         <input id="input-state-1 " type="text" class="search__input form-control input-state-1 input-group-text" placeholder="กรุณาค้นหา...">
                                         <i data-lucide="search" class="search__icon input-group-text"></i>
@@ -77,6 +77,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="flex flex-auto w-1/2 md:w-full px-5 items-center justify-start lg:justify-start">
                             <div class="mt-3"> <label for="input-state-1" class="form-label">Department</label> <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
                             </div>
