@@ -111,7 +111,7 @@
                             
                             <thead>
                                 <tr>
-                                    <th class="whitespace-nowrap">Plant</th>
+                                    <th class="whitespace-nowrap">Plant 555</th>
                                     <th class="whitespace-nowrap">Doc no.</th>
                                     <th class="text-center whitespace-nowrap">Selling Item</th>
                                     <th class="text-center whitespace-nowrap">Location</th>
