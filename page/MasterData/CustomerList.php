@@ -15,6 +15,7 @@
     <?php
     include(__DIR__ . '/../../include/HeaderLink.php');
     ?>
+    <link rel="stylesheet" href="../dist/css/accor-table.css" />
     <!-- END: CSS Assets-->
 </head>
 <!-- END: Head -->
@@ -85,7 +86,7 @@
                         <div class="dropdown">
                             <button class="btn btn-primary shadow-md mr-2 dropdown-toggle btn px-6 pl-6 mx-4" onclick="location.href='../../page/MasterData/CreateCustomer.php';">
                                 Create New
-                            <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-lucide="plus"></i> </span>
+                                <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-lucide="plus"></i> </span>
                             </button>
                         </div>
                     </div>
@@ -114,7 +115,7 @@
                                     <td class="text-left">081-2573187, 081-6391879</td>
                                     <td class="text-center">thana.wong</td>
                                     <td class="text-center">thana wongruksa</td>
-                                    <td class="text-left">25 Aug 2024</td>                                    
+                                    <td class="text-left">25 Aug 2024</td>
                                     <td class="text-left">
                                         <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Active </div>
                                     </td>
@@ -129,35 +130,39 @@
                                         </div>
                                     </td>
                                     <td class="text-center">
-                                        <div class="flex flex-row">                                           
+                                        <div class="flex flex-row">
                                             <button class="btn btn-border-none mr-2">
-                                                <div class="w-8 h-8 flex items-center justify-center"> <i data-lucide="chevron-down" class="w-4 h-4 mr-1"></i>  </div>
+                                                <div class="w-8 h-8 flex items-center justify-center"> <i data-lucide="chevron-down" class="w-4 h-4 mr-1"></i> </div>
                                             </button>
                                         </div>
                                     </td>
+
+                                </tr>
+                                <tr style="display: none;">
                                     <div class="table-more">
-                                        <table class="table-more t-status-1 table table-report -mt-2 table-fixed" >
-                                            <thead class="t-more-thead bg-blue-500 m-2 p-2 text-white" >
+                                        <table class="table-more t-status-1 table table-report -mt-2 table-fixed">
+                                            <thead class="t-more-thead bg-blue-500 m-2 p-2 text-white">
                                                 <tr>
-                                                <th class="whitespace-nowrap">Address</th>
-                                                <th class="whitespace-nowrap">E-mail สำหรับรับใบงาน</th>
-                                                <th class="whitespace-nowrap">E-mail สำหรับเรียกเก็บเงิน</th>
+                                                    <th class="whitespace-nowrap" colspan="5">Address</th>
+                                                    <th class="whitespace-nowrap">E-mail สำหรับรับใบงาน</th>
+                                                    <th class="whitespace-nowrap">E-mail สำหรับเรียกเก็บเงิน</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                <td class="text-left">93/2 ถนนซากกลาง-มิตรประชา ต.ห้วยโป่ง อ.เมือง จ.ระยอง</td>
-                                                <td class="text-left">sarunya_lee@hotmail.com</td>
-                                                <td>sarunya_lee@hotmail.com</td>
+                                                    <td class="text-left" colspan="5">93/2 ถนนซากกลาง-มิตรประชา ต.ห้วยโป่ง อ.เมือง จ.ระยอง</td>
+                                                    <td class="text-left">sarunya_lee@hotmail.com</td>
+                                                    <td>sarunya_lee@hotmail.com</td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>                                   
-                                </tr>                               
-                                
+                                    </div>
+
+                                </tr>
+
                             </tbody>
                         </table>
-                        <!-- END: table box -->
+                        
                     </div>
                     <!-- END: Data List -->
                     <!-- BEGIN: Pagination -->

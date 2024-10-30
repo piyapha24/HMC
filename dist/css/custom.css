@@ -166,7 +166,8 @@
 
 .table-customer.table th,
 .table-customer.table td {
-  max-width: 100px!important;
+  
+  max-width: auto !important;
   white-space: normal;
   text-wrap: balance;
 }
@@ -182,3 +183,4 @@
 .w-200 {
   width: 200px!important;
 }
+
