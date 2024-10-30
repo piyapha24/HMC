@@ -86,29 +86,11 @@
                         </div>
 
 
-                        <div class="dropdown">
-                            <button class="btn btn-primary shadow-md mr-2 dropdown-toggle btn px-6 pl-6 mx-4" aria-expanded="false" data-tw-toggle="dropdown">
-                                Create New
-                                <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-lucide="plus"></i> </span>
-                            </button>
-                            <div class="dropdown-menu w-40">
-                                <ul class="dropdown-content">
-                                    <li>
-                                        <a href="" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Create New SCR </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Create New ADR </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Create New GRD </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        
                     </div>
                     <!-- BEGIN: Data List -->
                     <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
-                        <table class="table table-report -mt-2">
+                        <table class="table-fixed table table-report -mt-2">
                             
                             <thead>
                                 <tr>
@@ -140,12 +122,14 @@
                                     <td class="w-40">
                                         <div class="flex items-center justify-center"> In </div>
                                     </td>
-                                    <td class="table-report__action w-56">
+                                    <td class="w-56">
                                         <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full  text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
+                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>                                           
+                                        </div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex flex-wrap">
+                                            <div class="flex items-center justify-center"> <i data-lucide="chevron-right" class="w-4 h-4 mr-1"></i> </div>
                                         </div>
                                     </td>
                                 </tr>
@@ -166,12 +150,14 @@
                                     <td class="w-40">
                                         <div class="flex items-center justify-center"> In </div>
                                     </td>
-                                    <td class="table-report__action w-56">
+                                    <td class="w-56">
                                         <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full  text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
+                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>                                           
+                                        </div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex flex-wrap">
+                                            <div class="flex items-center justify-center"> <i data-lucide="chevron-right" class="w-4 h-4 mr-1"></i> </div>
                                         </div>
                                     </td>
                                 </tr>
@@ -192,12 +178,14 @@
                                     <td class="w-40">
                                         <div class="flex items-center justify-center"> None </div>
                                     </td>
-                                    <td class="table-report__action w-56">
+                                    <td class="w-56">
                                         <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 CompleteBox" href="javascript:;"> Complete </a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full  text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
+                                        <a class="flex items-center mr-3 CancelBox" href="javascript:;"> Cancel </a>                                           
+                                        </div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex flex-wrap">
+                                            <div class="flex items-center justify-center"> <i data-lucide="chevron-right" class="w-4 h-4 mr-1"></i> </div>
                                         </div>
                                     </td>
                                 </tr>
@@ -218,12 +206,14 @@
                                     <td class="w-40">
                                         <div class="flex items-center justify-center"> None </div>
                                     </td>
-                                    <td class="table-report__action w-56">
+                                    <td class="w-56">
                                         <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 CancelBox" href="javascript:;"> Cancel </a>
-                                            <a href="javascript:;" class="w-5 h-5 ml-5 flex items-center justify-center"> 
-                                                <span class="px-3 py-2 rounded-full  text-slate-500 dark:bg-darkmode-800 dark:text-slate-300 mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="more-vertical" class="lucide lucide-more-vertical w-4 h-4" data-lucide="more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>
-                                            </a>
+                                        <a class="flex items-center mr-3 CompleteBox" href="javascript:;"> Complete </a>                                          
+                                        </div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex flex-wrap">
+                                            <div class="flex items-center justify-center"> <i data-lucide="chevron-right" class="w-4 h-4 mr-1"></i> </div>
                                         </div>
                                     </td>
                                 </tr>

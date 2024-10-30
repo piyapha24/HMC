@@ -184,3 +184,22 @@
   width: 200px!important;
 }
 
+.qtime-bg-gray {
+  background-color: #D9DBE4;
+}
+
+.qtime-bg-cyan {
+  background-color: #00ADEF;
+}
+
+.qtime-bg-sky {
+  background-color: #B8E5FA;
+}
+
+.qtime-bg-blue {
+  background-color: #0E406A;
+}
+
+.qtime-bg-rose {
+  background-color: #FF3333;
+}
