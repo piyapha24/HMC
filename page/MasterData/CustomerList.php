@@ -138,32 +138,80 @@
                                     </td>
 
                                 </tr>
-                                <tr style="display: none;">
-                                    <div class="table-more">
-                                        <table class="table-more t-status-1 table table-report -mt-2 table-fixed">
-                                            <thead class="t-more-thead bg-blue-500 m-2 p-2 text-white">
-                                                <tr>
-                                                    <th class="whitespace-nowrap" colspan="5">Address</th>
-                                                    <th class="whitespace-nowrap">E-mail สำหรับรับใบงาน</th>
-                                                    <th class="whitespace-nowrap">E-mail สำหรับเรียกเก็บเงิน</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-left" colspan="5">93/2 ถนนซากกลาง-มิตรประชา ต.ห้วยโป่ง อ.เมือง จ.ระยอง</td>
-                                                    <td class="text-left">sarunya_lee@hotmail.com</td>
-                                                    <td>sarunya_lee@hotmail.com</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+
+                            </tbody>
+                        </table>
+                        <table class="table-fixed table table-report -mt-2 ">
+                            <thead class="bg-blue-500 m-2 p-2 text-white">
+                                <tr>
+                                    <th class="whitespace-nowrap" colspan="5">Address</th>
+                                    <th class="whitespace-nowrap">E-mail สำหรับรับใบงาน</th>
+                                    <th class="whitespace-nowrap">E-mail สำหรับเรียกเก็บเงิน</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-left" colspan="5">93/2 ถนนซากกลาง-มิตรประชา ต.ห้วยโป่ง อ.เมือง จ.ระยอง</td>
+                                    <td class="text-left">sarunya_lee@hotmail.com</td>
+                                    <td>sarunya_lee@hotmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table-fixed table table-report -mt-2 table-customer">
+                            
+                            <tbody>
+                                <!-- END: table row -->
+                                <tr class="intro-x">
+                                    <td class="text-left">012453</td>
+                                    <td class="text-left">บริษัท วงศ์พานิช จำกัด</td>
+                                    <td class="text-left">Charuwan Thongthirat</td>
+                                    <td class="text-left">081-2573187, 081-6391879</td>
+                                    <td class="text-center">Charuwan.wong</td>
+                                    <td class="text-center">Charuwan wongruksa</td>
+                                    <td class="text-left">25 Aug 2024</td>
+                                    <td class="text-left">
+                                        <div class="flex items-center justify-center text-red-500"> <i data-lucide="square" class="w-4 h-4 mr-2"></i> Active </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="flex flex-row">
+                                            <button class="btn btn-border-none mr-2">
+                                                <div class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="pencil"></i> </div>
+                                            </button>
+                                            <button class="btn btn-border-none mr-2">
+                                                <div class="w-8 h-8 bg-red-50 flex items-center justify-center rounded-full text-red-500"> <i class="w-4 h-4" data-lucide="trash-2"></i> </div>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="flex flex-row">
+                                            <button class="btn btn-border-none mr-2">
+                                                <div class="w-8 h-8 flex items-center justify-center"> <i data-lucide="chevron-down" class="w-4 h-4 mr-1"></i> </div>
+                                            </button>
+                                        </div>
+                                    </td>
 
                                 </tr>
 
                             </tbody>
                         </table>
-                        
+                        <table class="table-fixed table table-report -mt-2 ">
+                            <thead class="bg-blue-500 m-2 p-2 text-white">
+                                <tr>
+                                    <th class="whitespace-nowrap" colspan="5">Address</th>
+                                    <th class="whitespace-nowrap">E-mail สำหรับรับใบงาน</th>
+                                    <th class="whitespace-nowrap">E-mail สำหรับเรียกเก็บเงิน</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-left" colspan="5">93/2 ถนนซากกลาง-มิตรประชา ต.ห้วยโป่ง อ.เมือง จ.ระยอง</td>
+                                    <td class="text-left">sarunya_lee@hotmail.com</td>
+                                    <td>sarunya_lee@hotmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+
                     <!-- END: Data List -->
                     <!-- BEGIN: Pagination -->
                     <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center">
