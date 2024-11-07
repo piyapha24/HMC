@@ -200,34 +200,20 @@
                     <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
                         <div class="grow w-full px-5 items-center justify-start lg:justify-start">
                             <div class="mt-3 dropdown">
-                                <label for="input-state-1" class="form-label">Pick-up Point<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label>
-                                <select class="form-select sm:mr-2 input-state-1" aria-label="กรุณาเลือก">
-                                    <option>KNS</option>
-                                    <option>LAB</option>
-                                    <option>SMC</option>
-                                    <option>Store</option>
-                                    <option>KNS PP</option>
-                                    <option>LAB Sub Warehouse</option>
-                                </select>
+                                <label for="input-state-1" class="form-label">Pick-up Point</label>
+                                <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
                             </div>
                         </div>
                         <div class="flex flex-auto md:w-full px-5 items-center justify-start lg:justify-start">
                             <div class="mt-3 dropdown">
-                                <label for="input-state-1" class="form-label">Location<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label>
-                                <select class="form-select sm:mr-2 input-state-1" aria-label="กรุณาเลือก">
-                                    <option>PP Plant</option>
-                                    <option>PDH Plant</option>
-                                    <option>Sub Warehouse</option>
-                                </select>
+                                <label for="input-state-1" class="form-label">Location</label>
+                                <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
                             </div>
                         </div>
                         <div class="flex flex-auto md:w-full px-5 items-center justify-start lg:justify-start">
                             <div class="mt-3 dropdown">
-                                <label for="input-state-1" class="form-label">Plant<span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500 text-danger">*</span></label>
-                                <select class="form-select sm:mr-2 input-state-1" aria-label="กรุณาเลือก">
-                                    <option>PP</option>
-                                    <option>PDH</option>
-                                </select>
+                                <label for="input-state-1" class="form-label">Plant</label>
+                                <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
                             </div>
                         </div>
                     </div>

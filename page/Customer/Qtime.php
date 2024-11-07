@@ -15,8 +15,15 @@
     <?php
     include(__DIR__ . '/../../include/HeaderLink.php');
     ?>
-
+	
+	
     <!-- END: CSS Assets-->
+	<style>
+		.fc-day-today .fc-daygrid-day-frame{
+			background-color: #f2f2f2!important;
+            box-shadow: inset 0 0 10px #9c9c9c;
+		}
+	</style>
 </head>
 <!-- END: Head -->
 
@@ -118,74 +125,10 @@
                     
                 </div>
                 <div class="grid grid-cols-12 gap-5 mt-5">
-                    <!-- BEGIN: Calendar Side Menu -->
-                    <div class="col-span-12 xl:col-span-4 2xl:col-span-3">
-                        
-                        <div class="box p-5 intro-y ">
-                            <div class="flex">
-                                <i data-lucide="chevron-left" class="w-5 h-5 text-slate-500"></i>
-                                <div class="font-medium text-base mx-auto">April</div>
-                                <i data-lucide="chevron-right" class="w-5 h-5 text-slate-500"></i>
-                            </div>
-                            <div class="grid grid-cols-7 gap-4 mt-5 text-center">
-                                <div class="font-medium">Su</div>
-                                <div class="font-medium">Mo</div>
-                                <div class="font-medium">Tu</div>
-                                <div class="font-medium">We</div>
-                                <div class="font-medium">Th</div>
-                                <div class="font-medium">Fr</div>
-                                <div class="font-medium">Sa</div>
-                                <div class="py-0.5 rounded relative text-slate-500">29</div>
-                                <div class="py-0.5 rounded relative text-slate-500">30</div>
-                                <div class="py-0.5 rounded relative text-slate-500">31</div>
-                                <div class="py-0.5 rounded relative">1</div>
-                                <div class="py-0.5 rounded relative">2</div>
-                                <div class="py-0.5 rounded relative">3</div>
-                                <div class="py-0.5 rounded relative">4</div>
-                                <div class="py-0.5 rounded relative">5</div>
-                                <div class="py-0.5 bg-success/20 dark:bg-success/30 rounded relative">6</div>
-                                <div class="py-0.5 rounded relative">7</div>
-                                <div class="py-0.5 bg-primary text-white rounded relative">8</div>
-                                <div class="py-0.5 rounded relative">9</div>
-                                <div class="py-0.5 rounded relative">10</div>
-                                <div class="py-0.5 rounded relative">11</div>
-                                <div class="py-0.5 rounded relative">12</div>
-                                <div class="py-0.5 rounded relative">13</div>
-                                <div class="py-0.5 rounded relative">14</div>
-                                <div class="py-0.5 rounded relative">15</div>
-                                <div class="py-0.5 rounded relative">16</div>
-                                <div class="py-0.5 rounded relative">17</div>
-                                <div class="py-0.5 rounded relative">18</div>
-                                <div class="py-0.5 rounded relative">19</div>
-                                <div class="py-0.5 rounded relative">20</div>
-                                <div class="py-0.5 rounded relative">21</div>
-                                <div class="py-0.5 rounded relative">22</div>
-                                <div class="py-0.5 bg-pending/20 dark:bg-pending/30 rounded relative">23</div>
-                                <div class="py-0.5 rounded relative">24</div>
-                                <div class="py-0.5 rounded relative">25</div>
-                                <div class="py-0.5 rounded relative">26</div>
-                                <div class="py-0.5 bg-primary/10 dark:bg-primary/50 rounded relative">27</div>
-                                <div class="py-0.5 rounded relative">28</div>
-                                <div class="py-0.5 rounded relative">29</div>
-                                <div class="py-0.5 rounded relative">30</div>
-                                <div class="py-0.5 rounded relative text-slate-500">1</div>
-                                <div class="py-0.5 rounded relative text-slate-500">2</div>
-                                <div class="py-0.5 rounded relative text-slate-500">3</div>
-                                <div class="py-0.5 rounded relative text-slate-500">4</div>
-                                <div class="py-0.5 rounded relative text-slate-500">5</div>
-                                <div class="py-0.5 rounded relative text-slate-500">6</div>
-                                <div class="py-0.5 rounded relative text-slate-500">7</div>
-                                <div class="py-0.5 rounded relative text-slate-500">8</div>
-                                <div class="py-0.5 rounded relative text-slate-500">9</div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- END: Calendar Side Menu -->
                     <!-- BEGIN: Calendar Content -->
-                    <div class="col-span-12 xl:col-span-8 2xl:col-span-9">
-                        <div class="box p-5">
-                            <div class="full-calendar" id="calendar"></div>
+                    <div class="col-span-12 xl:col-span-12 2xl:col-span-12">
+                        <div class="box p-5 text-center">
+                            <div class="" id="calendar1"></div>
                         </div>
                     </div>
 
@@ -196,6 +139,7 @@
                         Q-Time Color
                     </h3>
                 </div>
+				
                 <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
                     <div class="border-t border-slate-200/60 dark:border-darkmode-400 pt-5 mt-5">
                         <div class="flex items-center mt-4">
@@ -236,8 +180,66 @@
         </div>
         <!-- END: Content -->
     </div>
-
+<div id="basic-modal-preview" class="modal" tabindex="-1" aria-hidden="true" bis_skin_checked="1" style="">
+                                        <div class="modal-dialog" bis_skin_checked="1">
+                                            <div class="modal-content" bis_skin_checked="1">
+                                                <div class="modal-body p-10 text-center" bis_skin_checked="1"> This is totally awesome blank modal! </div>
+                                            </div>
+                                        </div>
+                                    </div>
+<div id="basic-modal-preview1" class="modal" tabindex="-1" aria-hidden="true" bis_skin_checked="1" style="">
+                                        <div class="modal-dialog" bis_skin_checked="1">
+                                            <div class="modal-content" bis_skin_checked="1">
+                                                <div class="modal-body p-10 text-center" bis_skin_checked="1"> This is totally awesome blank modal! </div>
+                                            </div>
+                                        </div>
+                                    </div>
     <?php include(__DIR__ . '/../../include/script.php'); ?>
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+	
+	<script>
+	  var eventc = [{
+		  title: 'sdasdas',
+		  start: '2024-11-05',
+		  allDay: false,
+		  editable: false,
+		  backgroundColor: '#ffffff'
+	  }]
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar1');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+			events:eventc,
+			eventContent: function (args, createElement){
+				console.log(1);
+				args.backgroundColor='#198754';
+			  const text = '<button  data-tw-toggle="modal" data-tw-target="#basic-modal-preview" style="background-color: #B8E5FA;color: white;padding: 15px;margin-left: 10px;border-radius: 5px;">เช้า </button> <button data-tw-toggle="modal" data-tw-target="#basic-modal-preview1" style="background-color: #00ADEF;color: white;margin-left: 10px;padding: 15px; border-radius: 5px;">บ่าย</button>';
+				return {
+				html: text
+			  };
+			},
+			dayCellContent: function(info) {
+				console.log(info);
+                    // Generate custom HTML for each day
+                    var customHtml = `
+                        <div>
+                            <div>${info.dayNumberText}</div>
+                            <button  data-tw-toggle="modal" data-tw-target="#basic-modal-preview" style="background-color: #D9DBE4;border-radius: 5px;color: white;padding: 15px;margin-left: 10px;">เช้า </button> <button data-tw-toggle="modal" data-tw-target="#basic-modal-preview1" style="background-color: #D9DBE4;border-radius: 5px;color: white;margin-left: 10px;padding: 15px;">บ่าย</button>
+                        </div>
+                    `;
+                    return { html: customHtml };
+                },
+			dateClick: function(info) {
+				alert('Clicked on: ' + info.dateStr);
+				
+				// change the day's background color just for fun
+				//info.dayEl.style.backgroundColor = 'red';
+			  }
+        });
+        calendar.render();
+      });
+
+    </script>
 </body>
 
 </html>
