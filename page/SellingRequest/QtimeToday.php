@@ -210,7 +210,7 @@
                                         <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
                                     </td>
                                     <td class="w-40">
-                                    <div class="flex justify-center items-center">
+                                        <div class="flex justify-center items-center">
                                             <a class="flex items-center mr-3 QtimeBox-complete" href="javascript:;">เปลี่ยนวัน</a>                                           
                                         </div>
                                     </td>

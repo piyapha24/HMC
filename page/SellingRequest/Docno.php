@@ -60,56 +60,13 @@
                     <html>
                     <header>
                         <style>
-                            .new-page {
-                                page-break-before: always;
-                            }
-
-                            .center {
-                                text-align: center;
-
-                            }
-
-                            .left {
-                                text-align: left;
-                                margin-left: 6px;
-                                /*margin-top: 10px;*/
-                            }
-
-                            .right {
-                                text-align: right;
-                                margin-right: 4px;
-                            }
-
-                            .teacher {
-                                margin-left: 4px;
-                            }
-
-                            td {
-                                height: 130px;
-                                width: 120px;
-                            }
-
-                            :root {
-                                --border-strong: 3px solid #777;
-                                --border-normal: 1px solid gray;
-                            }
-
+                            
                             body {
                                 font-family: Georgia, 'Times New Roman', Times, serif;
                             }
-
-                            table>caption {
-                                font-size: 6mm;
-                                font-weight: bolder;
-                                letter-spacing: 1mm;
-                            }
-
-
                             /* 210 x 297 mm */
 
                             table {
-                                width: 297mm;
-                                height: 210mm;
                                 border-collapse: collapse;
                             }
 
@@ -117,225 +74,124 @@
                                 padding: 1mm;
                                 border: var(--border-normal);
                                 position: relative;
-                                font-size: 2.1mm;
-                                font-weight: bold;
                             }
 
                             tbody tr:nth-child(odd) {
                                 background: #fff;
                             }
 
-                            tbody tr:last-child {
-                                border-bottom: var(--border-strong);
-                            }
-
-                            tbody tr> :last-child {
-                                border-right: var(--border-strong);
-                            }
-
-
-                            /* top header */
-
-                            .top_head>th {
-                                width: 54mm;
-                                height: 10mm;
-                                vertical-align: bottom;
-                                border-top: var(--border-strong);
-                                border-bottom: var(--border-strong);
-                                border-right: 1px solid gray;
-                            }
-
-                            .top_head :first-child {
-                                width: 27mm;
-                                border: var(--border-strong);
-                            }
-
-                            .top_head :last-child {
-                                border-right: var(--border-strong);
-                            }
-
-
-                            /* left header */
-
                             tbody th {
-                                border-left: var(--border-strong);
-                                border-right: var(--border-strong);
                                 border-bottom: 1px solid gray;
                             }
 
-                            tbody>tr:last-child th {
-                                border-bottom: var(--border-strong);
-                            }
-
-
-                            /* row */
-
-                            tbody td>div {
-                                height: 34mm;
-                                overflow: hidden;
-                            }
-
-                            .vertical_span_all {
-                                font-size: 5mm;
-                                font-weight: bolder;
-                                text-align: center;
-                                border-bottom: var(--border-strong);
-                            }
-
-                            .vertical_span_all div {
-                                height: 10mm;
-                            }
-
-
-                            /* td contents */
-
-                            .left {
-                                position: absolute;
-                                top: 1mm;
-                                left: 1mm;
-                            }
-
-                            .right {
-                                position: absolute;
-                                left: 1mm;
-                                bottom: 1mm;
-                            }
-
-                            .teacher {
-                                position: absolute;
-                                right: 1mm;
-                                bottom: 1mm;
-                            }
-
-                            .note {
-                                font-size: 3mm;
-                            }
-
-                            .note :last-child {
-                                float: right;
-                            }
-
-                            @page {
-                                margin: 5mm;
-                            }
                         </style>
                     </header>
 
                     <body>
-                        <!-- Heading -->
-                        <!-- Table -->
-                        <table>
-
-                            <!-- Day/Periods -->
-                            <tr class="top_head">
-                                <th scope="col">Day/Period</th>
-                                <th scope="col">I</th>
-                                <th scope="col">II</th>
+                        
+                        <table style="width: 297mm; border-collapse: collapse;">
+                            <tr  style="font-size: 7mm; font-weight: bold; line-height: 15mm;">
+                                <td >ใบแจ้งรับสินค้า</td>
+                                <td style="text-align: right;">2024/0493-SCR</td>
+                                
                             </tr>
-                            <tbody>
-                                <!-- Monday -->
-                                <tr>
-                                    <th scope="row" class="center">
-                                        <b>Monday</b>
-                                    </th>
-                                    <td class="vertical_span_all">
-                                       
-                                    </td>
-                                    <td colspan=1>
-                                        
-                                    </td>
-                                    
-                                    
-
-                                </tr>
-                                
+                            <tr  style=" font-size: 5mm; line-height: 5mm;">
+                                <td >รหัสลูกค้า Customer Code:   </td>
+                                <td >907738</td>
+                            </tr>
+                            <tr  style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ccc; font-size: 5mm; line-height: 8mm;">
+                                <td >ชื่อบริษัท Company Name: </td>
+                                <td > บ.เพียรทำดี รีไซเคิล จำกัด</td>
+                            </tr>
+                        </table>
+                        <table style="width: 297mm; border-collapse: collapse; font-size: 5mm; margin-top: 10mm; border: 1px solid black; margin-bottom: 10mm;">
+                            <tr style="font-size: 5mm; background-color: #B8E5FA;">
+                                <td style="border: 1px solid black; padding: 3mm; padding: 3mm;font-weight: bold;">ใบงานเลขที่ <br> Doc no.</td>
+                                <td style="border: 1px solid black; padding: 3mm; padding: 3mm;font-weight: bold;">รายการสินค้า <br> Selling Item </td>
+                                <td style="border: 1px solid black; padding: 3mm; padding: 3mm;font-weight: bold;">วันรับสินค้า <br> Delivery Date </td>
+                            </tr>
+                            <tr  style="border: 1px solid black;">
+                                <td style="border: 1px solid black; padding: 3mm;">2024/0493-SCR  </td>
+                                <td style="border: 1px solid black; padding: 3mm;">Plastic sheet PP/PE (พลาสติก PP/PE, ถุงจัมโป้กรีดก้นถุง) </td>
+                                <td style="border: 1px solid black; padding: 3mm;">10 Sep 2024 </td>
+                            </tr>
+                        </table>
+                        <table style="width: 297mm; border-collapse: collapse; font-size: 7mm;font-weight: bold; margin-top: 10mm; margin-bottom: 10mm;">
+                            <tr >
+                                <td >Pick-up Point Information </td>
+                            </tr>
+                        </table>
+                        <table style="width: 135mm; border-collapse: collapse; font-size: 5mm; float: left;">
+                            <tr>
+                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">จุดรับสินค้า <br> Pick-up Point</td>
+                                <td style="border: 1px solid black; padding: 3mm;">คลัง SMC  <br> Location </td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">สถานที่ <br> Location</td>
+                                <td style="border: 1px solid black; padding: 3mm;">Sub-Warehouse </td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">รับสินค้าติดต่อ <br> Co-Ordinator </td>
+                                <td style="border: 1px solid black; padding: 3mm;">092-569-1461 </td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">เบอร์โทร <br> Phone no.  </td>
+                                <td style="border: 1px solid black; padding: 3mm;">092-569-1461 </td>
+                            </tr>
                             
-                                
-                                
-                            </tbody>
+                        </table>
+                        <table style="width: 135mm; border-collapse: collapse; font-size: 5mm; float: left; margin-left: 10mm;">
+                            <tr>
+                                <td style="height: 24mm;"></td>
+                                <td style="height: 10mm;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: 10mm;"></td>
+                                <td style="height: 10mm;"></td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;"> เจ้าของงานติดต่อ <br> Requester  </td>
+                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">เบอร์โทร <br> Phone no.  </td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black; padding: 3mm; height: 16mm;">Charuwan Thongthirat </td>
+                                <td style="border: 1px solid black; padding: 3mm; height: 16mm;">092-569-1461 </td>
+                            </tr>
+                            
+                        </table>
+                        <table style="width: 297mm; border-collapse: collapse; font-size: 5mm; margin-top: 10mm; margin-bottom: 10mm;">
+                            <tr>
+                                <td ></td>
+                                <td ></td>
+                            </tr>
+                        </table>
+                        <table style="width: 297mm; border-collapse: collapse; font-size: 5mm; margin-top: 10mm; margin-bottom: 10mm;">
+                            <tr>
+                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">ข้อมูลเพิ่มเติม Information</td>
+                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">ขึ้นออโต้</td>
+                            </tr>
+                            <tr  style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ccc; margin-top: 10mm; margin-bottom: 10mm; ">
+                                <td style="border: 1px solid black; padding: 3mm;">ขึ้นออโต้  <br> ขึ้นออโต้  <br> ขึ้นออโต้ </td>
+                                <td style="border: 1px solid black; padding: 3mm;"> ขึ้นออโต้ <br> รูปภาพพลาสชีส.jpg </td>
+                            </tr>
+                        </table>
+                        <table style="width: 297mm; border-collapse: collapse; font-size: 5mm;margin-top: 10mm; margin-bottom: 10mm;">
+                            <tr>
+                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">Notification </td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black; padding: 3mm;">ขึ้นออโต้  <br> ขึ้นออโต้  <br> ขึ้นออโต้ </td>
+                            </tr>
+                        </table>
+                        <table style="width: 297mm; border-collapse: collapse; font-size: 5mm; margin-top: 10mm; margin-bottom: 10mm;">
+                            <tr>
+                                <td ></td>
+                                <td ></td>
+                            </tr>
                         </table>
 
-                        <!-- Table -->
-                        <table>
 
-                            <!-- Day/Periods -->
-                            <tr class="top_head">
-                                <th scope="col">Day/Period</th>
-                                <th scope="col">I</th>
-                                <th scope="col">II</th>
-                                <th scope="col">III</th>
-                                <th scope="col">1:15-1:45</th>
-                                <th scope="col">IV</th>
-                                <th scope="col">V</th>
-
-                            </tr>
-                            <tbody>
-                                <!-- Monday -->
-                                <tr>
-                                    <th scope="row" class="center">
-                                        <b>Monday</b>
-                                    </th>
-                                    <td rowspan="6" class="vertical_span_all">
-                                       
-                                    </td>
-                                    <td colspan=1>
-                                        
-                                    </td>
-                                    
-                                    
-
-                                </tr>
-                                <!-- Tuesday -->
-                                <tr>
-                                    <th scope="row" class="center">
-                                        
-                                    </th>
-                                    <td colspan=1>
-                                        
-                                    </td>
-                                    
-                                    
-                                </tr>
-                            
-                                <tr>
-                                    <td class="center">
-                                        
-                                    </td>
-                                    <td colspan=1>
-                                        
-                                    </td>
-                                    
-                                    
-                                </tr>
-                                <!-- Thursday -->
-                                <tr>
-                                    <td class="center">
-                                        
-                                    </td>
-                                    
-                                    <td colspan=1>
-                                        
-                                    </td>
-                                    
-                                    
-
-                                </tr>
-                                <!-- Friday -->
-                                <tr>
-                                    <td class="center">
-                                        <b>Friday</b>
-                                    </td>
-                                    
-                                    <td colspan=1>
-                                    </td>
-                                    
-                                    
-
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <p class="new-page">
+                        
                 </div>
 </body>
 
