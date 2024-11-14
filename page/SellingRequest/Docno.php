@@ -111,9 +111,9 @@
                                 <td style="border: 1px solid black; padding: 3mm; padding: 3mm;font-weight: bold;">วันรับสินค้า <br> Delivery Date </td>
                             </tr>
                             <tr  style="border: 1px solid black;">
-                                <td style="border: 1px solid black; padding: 3mm;">2024/0493-SCR  </td>
-                                <td style="border: 1px solid black; padding: 3mm;">Plastic sheet PP/PE (พลาสติก PP/PE, ถุงจัมโป้กรีดก้นถุง) </td>
-                                <td style="border: 1px solid black; padding: 3mm;">10 Sep 2024 </td>
+                                <td style="border: 1px solid black; padding: 3mm;">2024/0493-SCR </td>
+                                <td style="border: 1px solid black; padding: 3mm;">Plastic sheet PP/PE (พลาสติก PP/PE, ถุงจัมโป้กรีดก้นถุง)</td>
+                                <td style="border: 1px solid black; padding: 3mm;">10 Sep 2024</td>
                             </tr>
                         </table>
                         <table style="width: 297mm; border-collapse: collapse; font-size: 7mm;font-weight: bold; margin-top: 10mm; margin-bottom: 10mm;">
@@ -168,7 +168,7 @@
                         <table style="width: 297mm; border-collapse: collapse; font-size: 5mm; margin-top: 10mm; margin-bottom: 10mm;">
                             <tr>
                                 <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">ข้อมูลเพิ่มเติม Information</td>
-                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">ขึ้นออโต้</td>
+                                <td style="border: 1px solid black; padding: 3mm;background-color: #B8E5FA;">เอกสารแนบ Attachment</td>
                             </tr>
                             <tr  style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ccc; margin-top: 10mm; margin-bottom: 10mm; ">
                                 <td style="border: 1px solid black; padding: 3mm;">ขึ้นออโต้  <br> ขึ้นออโต้  <br> ขึ้นออโต้ </td>
