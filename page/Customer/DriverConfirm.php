@@ -146,7 +146,7 @@
                         </div>
                         <div class="flex flex-auto md:w-full px-5 items-center justify-start lg:justify-start">
                             <div class="mt-3 dropdown">
-                                <label for="input-state-1" class="form-label">Plant</label>
+                                <label for="input-state-1" class="form-label">Plant </label>
                                 <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="Input Auto" disabled>
                             </div>
                         </div>
