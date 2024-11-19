@@ -70,7 +70,16 @@
                                 </ul>
                             </div>
                         </div>
-                        
+                        <div class="dropdown mt-3 sm:mt-0 mr-auto sm:mr-0 mr-5">
+                            <button class="dropdown-toggle dropdown-toggle btn px-2 box w-full font-normal mr-5 ml-5" aria-expanded="false" data-tw-toggle="dropdown"> Type All <i data-lucide="chevron-down" class="w-4 h-4 ml-2"></i> </button>
+                            <div class="dropdown-menu w-40">
+                                <ul class="dropdown-content overflow-y-auto h-32">
+                                    <li> <a href="" class="dropdown-item">Work list SCR</a> </li>
+                                    <li> <a href="" class="dropdown-item">Work list ADR</a> </li>
+                                    <li> <a href="" class="dropdown-item">Work list GRD</a> </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="sm:ml-auto mt-3 sm:mt-0 relative text-slate-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="calendar" data-lucide="calendar" class="lucide lucide-calendar w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> 
                                     <input type="text" class="datepicker form-control sm:w-56 box pl-10">
@@ -90,8 +99,8 @@
                                     <th class="text-center whitespace-nowrap">Selling Item</th>
                                     <th class="text-center whitespace-nowrap">Customer</th>
                                     <th class="text-center whitespace-nowrap">Unit Price</th>
+                                    <th class="text-center whitespace-nowrap">Unit</th>
                                     <th class="text-center whitespace-nowrap">Location</th>
-                                    <th class="text-center whitespace-nowrap">Requester</th>
                                     <th class="text-center whitespace-nowrap">Confirm Date</th>
                                     <th class="text-center whitespace-nowrap">Next Step</th>
                                     <th class="text-center whitespace-nowrap">Payment</th>
@@ -101,23 +110,27 @@
                             <tbody>
                                 <tr class="intro-x">
                                     
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0457-SCR</td>
-                                    <td>
+                                    <td class="text-center">PP</td>
+                                    <td class="text-center">2024/0457-SCR</td>
+                                    <td class="text-center">
                                         <a href="" class="font-medium whitespace-nowrap">Steel scrap</a>                                        
                                     </td>
-                                    <td class="text-center">PP Plant</td>                                    
-                                    <td class="text-left">วงศ์พานิช</td>
-                                    <td class="text-center">Operation</td>
+                                    <td class="text-center">3K</td>                                    
+                                    <td class="text-center">12.50</td>
+                                    <td class="text-center">KG</td>
+                                    <td class="text-center">PP Plant</td>
                                     <td class="w-40">
                                         <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
                                     </td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center"> In </div>
+                                        <div class="flex items-center justify-center"> Re-payment </div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center mr-3 inPaymentBox"> Wait TT </div>
                                     </td>
                                     <td class="w-56">
                                         <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>                                           
+                                            <a class="flex items-center mr-3 inProgressBox" href="../../page/Customer/PaymentSlip.php">Inprogress</a>                                           
                                         </div>
                                     </td>
                                     <td class="w-40">
@@ -129,23 +142,27 @@
                                 <!-- END: table row -->
                                 <tr class="intro-x">
                                     
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0457-SCR</td>
-                                    <td>
+                                    <td class="text-center">PP</td>
+                                    <td class="text-center">2024/0457-SCR</td>
+                                    <td class="text-center">
                                         <a href="" class="font-medium whitespace-nowrap">Steel scrap</a>                                        
                                     </td>
-                                    <td class="text-center">PP Plant</td>                                    
-                                    <td class="text-left">วงศ์พานิช</td>
-                                    <td class="text-center">Operation</td>
+                                    <td class="text-center">3K</td>                                    
+                                    <td class="text-center">12.50</td>
+                                    <td class="text-center">KG</td>
+                                    <td class="text-center">PP Plant</td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center text-danger"> <i data-lucide="square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
+                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
                                     </td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center"> In </div>
+                                        <div class="flex items-center justify-center"> Payment </div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center mr-3 inPaymentBox"> Wait TT </div>
                                     </td>
                                     <td class="w-56">
                                         <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>                                           
+                                            <a class="flex items-center mr-3 inProgressBox" href="../../page/Customer/PaymentSlip.php">Inprogress</a>                                           
                                         </div>
                                     </td>
                                     <td class="w-40">
@@ -157,23 +174,27 @@
                                 <!-- END: table row -->
                                 <tr class="intro-x">
                                     
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0455-GRD</td>
-                                    <td>
-                                        <a href="" class="font-medium whitespace-nowrap">Grade 7</a>                                        
+                                    <td class="text-center">PP</td>
+                                    <td class="text-center">2024/0457-SCR</td>
+                                    <td class="text-center">
+                                        <a href="" class="font-medium whitespace-nowrap">Steel scrap</a>                                        
                                     </td>
-                                    <td class="text-center">Sub Warehouse</td>                                    
-                                    <td class="text-left">NBJ</td>
-                                    <td class="text-center">Operation</td>
+                                    <td class="text-center">3K</td>                                    
+                                    <td class="text-center">12.50</td>
+                                    <td class="text-center">KG</td>
+                                    <td class="text-center">PP Plant</td>
                                     <td class="w-40">
                                         <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
                                     </td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center"> None </div>
+                                        <div class="flex items-center justify-center"> Account </div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center mr-3 inPaymentBox"> Wait TT </div>
                                     </td>
                                     <td class="w-56">
                                         <div class="flex justify-center items-center">
-                                        <a class="flex items-center mr-3 CancelBox" href="javascript:;"> Cancel </a>                                           
+                                            <a class="flex items-center mr-3 inProgressBox" href="../../page/Customer/PaymentSlip.php">Inprogress</a>                                           
                                         </div>
                                     </td>
                                     <td class="w-40">
@@ -185,23 +206,27 @@
                                 <!-- END: table row -->
                                 <tr class="intro-x">
                                     
-                                    <td class="text-left">PP</td>
-                                    <td class="text-left">2024/0451-SCR</td>
-                                    <td>
-                                        <a href="" class="font-medium whitespace-nowrap">Wooder pallet</a>                                        
+                                    <td class="text-center">PP</td>
+                                    <td class="text-center">2024/0457-SCR</td>
+                                    <td class="text-center">
+                                        <a href="" class="font-medium whitespace-nowrap">Steel scrap</a>                                        
                                     </td>
-                                    <td class="text-center">Sub Warehouse</td>                                    
-                                    <td class="text-left">เพียรทำดี</td>
-                                    <td class="text-center">Kittisak</td>
+                                    <td class="text-center">3K</td>                                    
+                                    <td class="text-center">12.50</td>
+                                    <td class="text-center">KG</td>
+                                    <td class="text-center">PP Plant</td>
                                     <td class="w-40">
                                         <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> 25 Aug 2024 </div>
                                     </td>
                                     <td class="w-40">
-                                        <div class="flex items-center justify-center"> None </div>
+                                        <div class="flex items-center justify-center"> Payment </div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center mr-3 inPaymentBox"> Wait TT </div>
                                     </td>
                                     <td class="w-56">
                                         <div class="flex justify-center items-center">
-                                        <a class="flex items-center mr-3 CompleteBox" href="javascript:;"> Complete </a>                                          
+                                            <a class="flex items-center mr-3 inProgressBox" href="../../page/Customer/PaymentSlip.php">Inprogress</a>                                           
                                         </div>
                                     </td>
                                     <td class="w-40">
