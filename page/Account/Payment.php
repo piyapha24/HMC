@@ -70,16 +70,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="dropdown mt-3 sm:mt-0 mr-auto sm:mr-0 mr-5">
-                            <button class="dropdown-toggle dropdown-toggle btn px-2 box w-full font-normal mr-5 ml-5" aria-expanded="false" data-tw-toggle="dropdown"> Type All <i data-lucide="chevron-down" class="w-4 h-4 ml-2"></i> </button>
-                            <div class="dropdown-menu w-40">
-                                <ul class="dropdown-content overflow-y-auto h-32">
-                                    <li> <a href="" class="dropdown-item">Work list SCR</a> </li>
-                                    <li> <a href="" class="dropdown-item">Work list ADR</a> </li>
-                                    <li> <a href="" class="dropdown-item">Work list GRD</a> </li>
-                                </ul>
-                            </div>
-                        </div>
+                        
                         <div class="sm:ml-auto mt-3 sm:mt-0 relative text-slate-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="calendar" data-lucide="calendar" class="lucide lucide-calendar w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> 
                                     <input type="text" class="datepicker form-control sm:w-56 box pl-10">
@@ -97,11 +88,13 @@
                                     <th class="whitespace-nowrap">Plant</th>
                                     <th class="whitespace-nowrap">Doc no.</th>
                                     <th class="text-center whitespace-nowrap">Selling Item</th>
-                                    <th class="text-center whitespace-nowrap">Location</th>
                                     <th class="text-center whitespace-nowrap">Customer</th>
+                                    <th class="text-center whitespace-nowrap">Unit Price</th>
+                                    <th class="text-center whitespace-nowrap">Location</th>
                                     <th class="text-center whitespace-nowrap">Requester</th>
                                     <th class="text-center whitespace-nowrap">Confirm Date</th>
                                     <th class="text-center whitespace-nowrap">Next Step</th>
+                                    <th class="text-center whitespace-nowrap">Payment</th>
                                     <th class="text-center whitespace-nowrap">Status</th>
                                 </tr>
                             </thead>
