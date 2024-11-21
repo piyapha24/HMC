@@ -231,7 +231,7 @@
                     <!-- BEGIN: Info ROW-->
                     <div class="flex flex-col lg:flex-row border-b border-slate-200/60 dark:border-darkmode-400 pb-5 -mx-5">
                         <div class="mt-6 lg:mt-0 flex-1 px-5   border-slate-200/60 dark:border-darkmode-400 border-t lg:border-t-0 pt-5 lg:pt-0">
-                            <div class="mt-3"> <label for="input-state-1" class="form-label">เอกสารแนบ</label> <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="เอกสารแนบจาก Q-Time" disabled>
+                            <div class="mt-3"> <label for="input-state-1" class="form-label">เอกสารแนบ</label> <input id="input-state-1" type="text" class="form-control state--b-blue" placeholder="เอกสารแนบจาก Q-Time">
                             </div>
                         </div>
                         
