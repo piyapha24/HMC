@@ -140,7 +140,7 @@
                                     </td>
                                     <td class="text-center">
                                         <div class="flex flex-row">                                           
-                                            <button class="btn btn-border-none mr-2" onclick="location.href='FillIn.php';">
+                                            <button class="btn btn-border-none mr-2" onclick="location.href='TruckInFilIn.php';">
                                                 <div class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="pencil"></i> </div>
                                             </button>
                                         </div>
