@@ -115,7 +115,7 @@
                                     </td>
                                     <td class="w-56">
                                         <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>                                           
+                                            <a class="flex items-center mr-3 inProgressBox" href="../../page/Environment/Confirm-GatePassWastePermit.php">Inprogress</a>                                           
                                         </div>
                                     </td>
                                     <td class="w-40">
@@ -143,7 +143,7 @@
                                     </td>
                                     <td class="w-56">
                                         <div class="flex justify-center items-center">
-                                            <a class="flex items-center mr-3 inProgressBox" href="javascript:;">Inprogress</a>                                           
+                                            <a class="flex items-center mr-3 inProgressBox" href="../../page/Environment/Confirm-GatePassWastePermit.php">Inprogress</a>                                           
                                         </div>
                                     </td>
                                     <td class="w-40">
